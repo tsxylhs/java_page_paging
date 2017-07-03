@@ -104,5 +104,30 @@ public class UserDao {
 		
 		
 	}
+	public int addbook(book book){
+        PreparedStatement  prestmt=null;
+        Connection conn=null;
+        int flog=0;
+        JDBCUtils jdbcconnection=new JDBCUtils();
+        conn =jdbcconnection.connect();
+        String sql="insert  into book values(?,?,?)";
+        try {
+			prestmt=conn.prepareStatement(sql);
+			  prestmt.setInt(1, book.getBookID());
+		        prestmt.setString(2, book.getBookName());
+		        prestmt.setString(3 ,book.getAutherName());
+		        flog=prestmt.executeUpdate();
+		        if(flog!=0){
+		        	return flog;
+		        }
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return flog;
+      
+        
+        		
+ 	}
 
 }

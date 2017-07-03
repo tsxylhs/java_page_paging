@@ -7,10 +7,13 @@
 <title>主页</title>
 </head>
 <body>
+<div align="center">
+<h1>欢迎登录</h1>
 <form action="listbookservlet" method="post">
 用户名：<input type="text" name="username" /><br>
 密码：  <input type="password" name="userpassword" />
-<input type="submit" value=”提交“>
+<input type="submit" value="提交">
 </form>
+</div>
 </body>
 </html>

@@ -1,7 +1,11 @@
 package cn.lhs.dao;
 
 public class book {
-   private int bookID;
+   @Override
+	public String toString() {
+		return "book [bookID=" + bookID + ", bookName=" + bookName + ", autherName=" + autherName + "]";
+	}
+private int bookID;
    private String bookName;
    private String autherName;
 public int getBookID() {

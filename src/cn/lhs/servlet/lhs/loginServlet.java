@@ -19,7 +19,7 @@ public class loginServlet extends HttpServlet {
     	  }
     	  else
     	  {
-    		 resp.sendRedirect("login.jsp");;
+    		 resp.sendRedirect("login.jsp");
     	  }
     	  
     }

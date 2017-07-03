@@ -22,6 +22,7 @@ table {border-collapse: collapse;}
 </head>
 <body>
 <h2 align="center">图书管理系统</h2>
+<h4 align="center"><a href="add.jsp">添加图书</a></h4>
 <table align="center">
    <tr><td>书号</td><td>书名</td><td>作者</td></tr>    
 </table>
